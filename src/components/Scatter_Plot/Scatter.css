@@ -1,0 +1,33 @@
+/* Add the CSS styles to your existing CSS file or create a new one */
+
+.table-container {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    min-width: 150px; /* Set a minimum width for header cells */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
